@@ -12,5 +12,15 @@ The system detects intruders in real-time using a web camera and the YOLO algori
 1.Arduino IDE<br>
 2.Jupyter Notebook<br>
 3.Visual Studio Code<br>
-4.Blynk <br>
+4.Blynk 
+
+# Hardware Requirements
+1.ESP8266<br>
+2.Web Camera<br>
+3.Servo Motor<br>
+4.Led Light<br>
+5.Piezo Buzzer<br>
+6.Bread Board, Cables and Resistors
+
+
 
