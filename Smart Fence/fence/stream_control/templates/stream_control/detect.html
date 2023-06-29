@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+  <body style="background-color:#5c7038">
+    <div class="image_container">
+      <div class="col-md-6">
+        <div class="jumbotron">
+            <h3><span style="color: #5c7038">Click To Start Detection: <span></span></h3>
+            <form action="{% url 'stream_control:detect_person' %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">DETECT</button>
+            </form><br>
+        </div>
+    </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h3><span style="color: #5c7038">Click For Actions: <span></span></h3>
+          <form action="{% url 'stream_control:take_actions' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" name="controls" class="btn btn-primary">CONTROLS</button>
+          </form><br>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      img.detected_image {
+        height: 100%;
+        width: 100%;
+      }
+
+    </style>
+
+    <div class="image_container">
+      <div class="jumbotron">
+        <h3><span style="color: #5c7038">Detected Image: <span></span></h1>
+        <img id="al" class="detected_image" src="{{ latest_image.image.url }}" onerror="standby()"></img>
+      </div>
+    </div>
+
+    <script>
+      function standby(){
+        document.getElementById('al').src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
+      }
+    </script>
+{% endblock %}

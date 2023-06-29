@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smart Fence</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!-- CSS Linkage -->
+    <link rel="stylesheet" href="{% static 'fence/css/master.css' %}">
+
+  </head>
+  <body style="background-color:#5c7038">
+    <font color = "white">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <nav class="navbar"  id="nav_header" style="background-color:#2B411C">
+        <!-- <nav class='navbar navbar-expand-sm bg-light'> -->
+        <nav class='navbar mynav' role='navigator' id='navbar'>
+            <div class="container">
+                    <a class='navbar-brand mynav' href="{% url 'home' %}"><span style="color: #A4AA88; font-size: xx-large;">Smart Fence</span></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'about' %}"><span style="color: #A4AA88">About<span></span></a></li>
+                    <li><a href="{% url 'admin:index' %}"><span style="color: #A4AA88">Admin<span></span></a></li>
+
+                   {% if user.is_authenticated %}
+                    <li><a href="{% url 'stream_control:detect' %}"><span style="color: #A4AA88">Stream & Control<span></span></a></li>
+                     <li><a href="{% url 'basic_app:logout' %}"><span style="color: #A4AA88">Log Out</span></a></li>
+                   {% else %}
+
+                       <li><a href="{% url 'basic_app:login' %}"><span style="color: #A4AA88">Login<span></span></a></li>
+                       {% comment %} <li><a href="{% url 'basic_app:signup' %}"><span style="color: #A4AA88">Signup<span></span></a></li> {% endcomment %}
+
+                    {% endif %}
+
+                </ul>
+
+            </div>
+        </nav>
+    </nav>
+
+        <!-- </nav> -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+
+  <div class="container">
+
+      {% block content %}
+
+      {% endblock %}
+
+    </div>
+
+  </body>
+
+  <!-- Linking JavaScript files -->
+  <script type="text/javascript" src="{% static "fence/js/master.js" %}"></script>
+
+</html>

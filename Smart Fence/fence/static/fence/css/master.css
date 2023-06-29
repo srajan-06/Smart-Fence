@@ -1,0 +1,26 @@
+.troopImg{
+    height: 75vh;
+    width: 75vw;
+} 
+ 
+
+.outer-card{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-card{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(232, 220, 220); 
+    align-items: right;
+    justify-content: right;
+} 
+
+.inner-card p , h3{
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}  
+
+.troopImg{
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 10px;
+}
+
+.image_container{
+    width: 50vw;
+    height: 50vw;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    position: relative;
+
+}
+
+.detected_image{
+    height: 50%;
+    width: 50%;
+}
+

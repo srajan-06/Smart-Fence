@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div style="margin: 0px; padding: 0px;">
+     <div style="width: 80vw; padding: 10px; text-align: center;background-color: rgb(195, 195, 195); color: rgb(221, 159, 128);box-shadow: rgb(66, 65, 65);">
+        <h1 >Logged in Successfully!</h1>
+     </div>
+  </div> 
+
+  <div style="margin-top: 100px; padding: 0px; ">
+    <div style="width: 80vw;min-height: 50wh; padding: 10px; text-align: center;background-color: rgb(195, 195, 195); color: rgb(221, 159, 128);">
+       <h1 style="font-size: xx-large;">Click Below to navigate for Dectection.</h1> 
+       <form action="{% url 'stream_control:gotodetect' %}" method="post">
+         {% csrf_token %}
+         <button style="padding: 15px; border-radius: 5px; border-color:transparent;">Stream & Control</button>
+       </form><br>
+    </div>
+ </div>
+
+
+{% endblock %}
