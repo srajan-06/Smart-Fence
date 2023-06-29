@@ -7,7 +7,7 @@ The system detects intruders in real-time using a web camera and the YOLO algori
 <a href="https://github.com/remarkablemark/html-react-parser/graphs/contributors">
   <img src="https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false">
 </a>
-[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
+
 
 ## Software Requirements
 1.Arduino IDE<br>
