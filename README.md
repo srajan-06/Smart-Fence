@@ -4,7 +4,7 @@ The project involves a smart fence system using an ESP8266 microcontroller, YOLO
 The system detects intruders in real-time using a web camera and the YOLO algorithm, triggering alerts through LED lights, a buzzer, and a servo motor.
 
 ## The Problem SmartFence solves
-Illegal border crossings, smuggling of contraband, and terrorist activities are some of the significant challenges faced by border security personnel can be prevented.<br>
+Illegal border crossings, smuggling of contraband, and terrorist activities are some of the significant challenges faced by border security personnel can be prevented.
 An IoT-based border defense system can provide real-time monitoring, advanced analytics, and automated response capabilities to detect and prevent potential security threats.
 
 ## Software Requirements
