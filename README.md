@@ -9,8 +9,8 @@ The system detects intruders in real-time using a web camera and the YOLO algori
 </a>
 
 # Software Requirements
-1.Arduino IDE
-2.Jupyter Notebook
-3.Visual Studio Code
-4.Blynk 
+1.Arduino IDE<br>
+2.Jupyter Notebook<br>
+3.Visual Studio Code<br>
+4.Blynk <br>
 
