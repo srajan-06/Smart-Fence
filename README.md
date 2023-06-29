@@ -4,9 +4,10 @@ The project involves a smart fence system using an ESP8266 microcontroller, YOLO
 The system detects intruders in real-time using a web camera and the YOLO algorithm, triggering alerts through LED lights, a buzzer, and a servo motor.
 
 ## Contributors
-<a href="https://github.com/srajan-06/Smart-Fence/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=srajan-06/Smart-Fence" />
+<a href="https://github.com/remarkablemark/html-react-parser/graphs/contributors">
+  <img src="https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false">
 </a>
+[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
 
 ## Software Requirements
 1.Arduino IDE<br>
