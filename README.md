@@ -22,5 +22,14 @@ The system detects intruders in real-time using a web camera and the YOLO algori
 5.Piezo Buzzer<br>
 6.Bread Board, Cables and Resistors
 
+# Steps To Be Followed:
+1.Connect an external web-cam to the desktop.<br>
+2.Connect the esp8266 through the USB cable to the desktop. <br>
+3.Complete the necessary connections according to the hardware code.<br>
+4.Install required modules used in the project (Add Blynk Auth-Token too).<br>
+5.Run the server and login to the site.<br>
+6.Click on DETECT for detection.<br>
+7.Click on CONTROLS for Blynk actions.
+
 
 
