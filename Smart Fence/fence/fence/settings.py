@@ -116,7 +116,7 @@ USE_I18N = True
 USE_TZ = True
 
 #Intitializing Blynk client
-BLYNK_AUTH = "W9_mkzK-UAARsRds1s5LmOFWlyNd0hPO"
+BLYNK_AUTH = ""
 
 
 # Static files (CSS, JavaScript, Images)
