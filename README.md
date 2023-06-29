@@ -3,11 +3,9 @@ Smart Fence is an IoT-based Border Control and Monitoring System.
 The project involves a smart fence system using an ESP8266 microcontroller, YOLO object detection, and Blynk integration.
 The system detects intruders in real-time using a web camera and the YOLO algorithm, triggering alerts through LED lights, a buzzer, and a servo motor.
 
-## Contributors
-<a href="https://github.com/srajan-06/Smart-Fence/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=srajan-06/Smart-Fence" />
-</a>
-
+## The Problem SmartFence solves
+Illegal border crossings, smuggling of contraband, and terrorist activities are some of the significant challenges faced by border security personnel can be prevented.<br>
+An IoT-based border defense system can provide real-time monitoring, advanced analytics, and automated response capabilities to detect and prevent potential security threats.
 
 ## Software Requirements
 1.Arduino IDE<br>
