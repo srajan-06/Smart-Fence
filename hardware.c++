@@ -1,14 +1,14 @@
-#define BLYNK_TEMPLATE_ID "TMPL3-FvHWuQn"
-#define BLYNK_TEMPLATE_NAME "project"
-#define BLYNK_AUTH_TOKEN "W9_mkzK-UAARsRds1s5LmOFWlyNd0hPO"
+#define BLYNK_TEMPLATE_ID " "
+#define BLYNK_TEMPLATE_NAME " "
+#define BLYNK_AUTH_TOKEN " "
 
 #include <Servo.h>
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-char auth[] = "W9_mkzK-UAARsRds1s5LmOFWlyNd0hPO";
-char ssid[] = "Srajan";
-char pass[] = "qwertyui";
+char auth[] = " ";
+char ssid[] = " ";
+char pass[] = " ";
 
 
 int ledPin = D1;
